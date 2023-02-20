@@ -1,0 +1,14 @@
+.textButton {
+    background: #f9d615;
+    border-radius: 10px;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none !important;
+}

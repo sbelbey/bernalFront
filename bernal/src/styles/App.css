@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+body {
+    background-color: #202020;
+    padding-bottom: 7rem;
+    overflow-x: hidden;
+}
+
+.swal2-success-line-tip,
+.swal2-success-line-long {
+    font-size: 16px !important;
+}
+
+.swal2-x-mark-line-right,
+.swal2-x-mark-line-left {
+    font-size: 16px !important;
+}
+
+.swal2-icon.swal2-info {
+    color: #bd0025 !important;
+    border-color: #f9d615 !important;
+}

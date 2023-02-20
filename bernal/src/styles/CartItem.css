@@ -1,0 +1,117 @@
+.CartItem {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0.5rem;
+}
+.itemImg {
+    width: 30%;
+    aspect-ratio: 1;
+    z-index: 1;
+}
+
+.productDescriptionCart {
+    background: linear-gradient(180deg, #d9d9d9 0%, #f8f8f8 100%);
+    width: 85%;
+    border-radius: 15px;
+    padding-left: 15%;
+    margin-left: -15%;
+    height: 20vw;
+    z-index: 0;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productDataCart {
+    border-right: 1px solid black;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+.productNameCart,
+.productPriceCart {
+    color: black;
+}
+
+.productNameCart {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.quantityInput {
+    width: 18%;
+    color: black;
+}
+
+.btnProductCart {
+    width: 15%;
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+@media screen and (min-width: 992px) {
+    .CartItem {
+        margin-bottom: 1rem;
+        border: 1px #f9d615 solid;
+        color: white;
+        padding: 1.5rem;
+        border-radius: 15px;
+        padding-right: 0;
+    }
+
+    .itemImg {
+        width: 25%;
+        max-width: 350px;
+    }
+
+    .productDescriptionCart {
+        background: none;
+        border-radius: 0px;
+        padding-left: 3%;
+        margin-left: 0%;
+        height: 100%;
+        margin-top: 0;
+        justify-content: space-between;
+        border-left: 1px solid #f9d615;
+    }
+
+    .productDataCart {
+        border-right: 1px solid #f9d615;
+        width: 80%;
+        height: 100%;
+        justify-content: space-between;
+        padding-right: 3%;
+        align-content: space-around;
+    }
+    .productNameCart,
+    .productPriceCart {
+        color: white;
+    }
+
+    .productNameCart {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .quantityInput {
+        width: 10%;
+        font-size: 1.5rem;
+    }
+
+    .btnProductCart > img {
+        width: 50%;
+    }
+
+    .productPriceSection {
+        width: 20%;
+        text-align: center;
+    }
+}

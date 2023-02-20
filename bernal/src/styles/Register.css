@@ -1,0 +1,45 @@
+.registerForm {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.registerTittle {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.registerBtn {
+    color: black;
+}
+
+.registerTittle {
+    color: white;
+}
+
+.loginOptions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerSection {
+    width: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+    .registerForm {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}

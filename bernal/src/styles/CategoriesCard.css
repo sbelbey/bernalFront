@@ -1,0 +1,40 @@
+.categoriesCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    width: 90%;
+    height: 3rem;
+
+    background: linear-gradient(
+        222.29deg,
+        #727272 1.08%,
+        rgba(114, 114, 114, 0) 98.78%
+    );
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+}
+
+.titulo1 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+    .categoriesCard {
+        height: 10rem;
+    }
+
+    .categoriesCard:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 9px 7px rgb(255 255 255 / 20%);
+    }
+
+    .titulo1 {
+        font-size: 2rem;
+    }
+}

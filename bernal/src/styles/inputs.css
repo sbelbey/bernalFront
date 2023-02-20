@@ -1,0 +1,41 @@
+.formLabel {
+    color: white;
+    font-weight: 700;
+    line-height: 1.72rem;
+    align-self: baseline;
+    margin-top: 1rem;
+}
+
+.formInput {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 1rem 0 1rem 1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.formInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 39px;
+}
+
+span {
+    font-size: 12px !important;
+    padding: 3px;
+    color: #f9d615;
+    width: 70%;
+    display: none;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid #f9d615;
+}
+
+input:invalid[focused="true"] ~ span {
+    display: block;
+}

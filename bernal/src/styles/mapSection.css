@@ -1,0 +1,49 @@
+.MapSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: visible;
+}
+
+.MapContainer {
+    width: 95%;
+    height: 115vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.MarkerBernal {
+    text-transform: uppercase;
+    margin-top: -50px;
+    color: #f9d615 !important;
+    background-color: #a41c1c;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.MapTitle {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .MapContainer {
+        width: 100%;
+        max-width: 1200;
+        height: 434px;
+    }
+
+    .MapTitle {
+        display: block;
+        align-self: self-start;
+        color: #f9d615;
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 1rem;
+    }
+}

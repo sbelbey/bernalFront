@@ -1,0 +1,22 @@
+.ProfilePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textProfile {
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+.profileBtns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.swal2-styled.swal2-confirm {
+    color: black !important;
+}

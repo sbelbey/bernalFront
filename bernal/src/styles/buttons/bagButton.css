@@ -1,0 +1,32 @@
+.cartButton {
+    position: relative;
+    width: 1.4rem;
+    overflow: visible !important;
+}
+
+.iconInCart {
+    align-self: flex-end;
+    margin-right: 2rem;
+    cursor: default;
+}
+
+.iconInCart > img {
+    width: 2.3rem !important;
+    height: 2.3rem !important;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 0.8rem;
+    overflow-x: visible !important;
+}

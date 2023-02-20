@@ -1,0 +1,19 @@
+.logoHeaderContainer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.LogoHeader {
+    width: 5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    .logoHeaderContainer {
+        display: none;
+    }
+}

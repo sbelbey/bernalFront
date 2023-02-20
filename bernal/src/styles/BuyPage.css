@@ -1,0 +1,93 @@
+.buyPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.explainText {
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+
+.paymentMethod {
+    align-self: baseline;
+    color: white;
+}
+
+.radioArticle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* 
+.paymentSection {
+    display: flex;
+    width: 45%;
+    justify-content: flex-start;
+} */
+
+.content-input > input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.content-input {
+    position: relative;
+    padding: 0 0 0 45px;
+    display: block;
+    color: white;
+}
+
+.content-input input + i {
+    background: #f9d615;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content-input input[type="radio"] + i {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    left: 15px;
+}
+
+.content-input input[type="radio"] + i:before {
+    content: "";
+    display: block;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    background: black;
+    transition: all 0.25s ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.content-input input[type="radio"]:checked + i:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.content-input:hover input[type="radio"]:not(:checked) + i {
+    background: #fee76388;
+}
+
+.error {
+    width: 70%;
+    color: red;
+}

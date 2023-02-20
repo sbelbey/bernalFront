@@ -1,0 +1,87 @@
+.productsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.finderSection {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.brandSelecter,
+.modelSelecter,
+.yearSelecter {
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #f2f2f2;
+    color: #727272;
+}
+
+.brandSelecter {
+    width: 30%;
+}
+
+.modelSelecter {
+    width: 45%;
+}
+
+.yearSelecter {
+    width: 20%;
+}
+
+.productsTitle {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .productsSection {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .finderSection {
+        width: 95%;
+        max-width: 1200px;
+        justify-content: flex-start;
+    }
+
+    .brandSelecter,
+    .modelSelecter,
+    .yearSelecter {
+        margin-right: 1rem;
+    }
+
+    .brandSelecter {
+        width: 20%;
+    }
+
+    .modelSelecter {
+        width: 30%;
+    }
+
+    .yearSelecter {
+        width: 10%;
+    }
+
+    .productsTitle {
+        display: block;
+        color: #f9d615;
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 1rem;
+    }
+
+    .btnArticle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

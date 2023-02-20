@@ -1,0 +1,87 @@
+.CarouselSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPortadabtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPortada {
+    width: 90vw;
+    border-radius: 5px;
+}
+
+.CarouselSectionBig,
+.sliderTextBig,
+.rayoVectorBig {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .CarouselSection {
+        display: none;
+    }
+
+    .CarouselSectionBig {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: #a41c1c;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .text-btn {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 3rem;
+    }
+
+    .img-vector {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+            to right,
+            #a41c1c 0%,
+            #a41c1c 50%,
+            #202020 50%,
+            #202020 100%
+        );
+    }
+
+    .sliderTextBig,
+    .rayoVectorBig {
+        display: block;
+    }
+
+    .sliderTextBig {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .imgPortada {
+        border-radius: 50%;
+        width: 64%;
+        height: 35vw;
+    }
+
+    .rayoVectorBig {
+        width: 225px;
+        height: 333px;
+        margin-left: 30%;
+        position: absolute;
+    }
+}

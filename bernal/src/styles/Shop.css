@@ -1,0 +1,18 @@
+.iconInCart {
+    width: 2.3rem !important;
+    margin-bottom: 1rem;
+}
+.ShopPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .iconReorder {
+        margin-right: 15%;
+    }
+}
