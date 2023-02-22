@@ -29,7 +29,6 @@ const modifyUser = async (newData, userToken) => {
 const registerUser = async (userData) => {
     try {
         const { data } = await axios.post(`${baseUrl}/register`, userData);
-        console.log("🚀 ~ file: users.js:33 ~ registerUser ~ data", data);
         return data;
     } catch (error) {
         return error.response.data;

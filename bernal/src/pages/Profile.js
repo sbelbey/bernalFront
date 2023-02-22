@@ -21,7 +21,6 @@ export default function Profile({ user }) {
         },
     });
 
-
     const showAlert = () => {
         Swal.fire({
             text: "¿Quiere que un asesor mayorista se contacte con usted?",
@@ -31,12 +30,6 @@ export default function Profile({ user }) {
             confirmButtonColor: "#f9d615",
             background: "#202020",
             color: "#fff",
-            backdrop: `
-                rgba(255,255,255,0.4)
-                url("/src/svgs/LogoBernal.svg")
-                top
-                no-repeat
-            `,
             customClass: {
                 confirmButton: "confirm-button-class",
             },

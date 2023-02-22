@@ -57,7 +57,11 @@ export default function Header({ bag }) {
             </nav>
             <section className="navBarSection">
                 <Link to="/">
-                    <img className="bigHomeIcon" src={LogoGrande}></img>
+                    <img
+                        className="bigHomeIcon"
+                        src={LogoGrande}
+                        alt="Bernal Logo Grande"
+                    ></img>
                 </Link>
                 <nav className="navBarBig">
                     <Link to="/" className="navBarLinks">

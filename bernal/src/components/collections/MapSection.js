@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 export default function MapSection() {
     const { isLoaded, loadError } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: "AIzaSyBGMvY_eVzicDN6QNhCrjr15xOJBHEBt_A",
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
     });
 
     const position = {
@@ -14,7 +14,6 @@ export default function MapSection() {
     };
 
     const [origin, setOrigin] = useState("");
-
 
     const getCurrentLocation = () => {
         if (navigator.geolocation) {

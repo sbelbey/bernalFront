@@ -16,7 +16,7 @@ export default function CategoriesSection() {
     useEffect(() => {
         try {
             axios
-                .get(`http://localhost:8080/api/v1/categories/`)
+                .get(`${process.env.REACT_APP_IMAGES_SERVER_URL}/categories/`)
                 .then((result) => {
                     setCategories(result.data.categories);
                 });
